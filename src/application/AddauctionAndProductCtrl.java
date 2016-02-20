@@ -93,7 +93,6 @@ public class AddauctionAndProductCtrl {
 			pick_supplier.getItems().addAll(suplierList);
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally {
 			try {
