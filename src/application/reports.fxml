@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReportCtrl">
+   <children>
+      <AnchorPane prefHeight="798.0" prefWidth="1093.0">
+         <children>
+            <Label layoutX="91.0" layoutY="58.0" prefHeight="21.0" prefWidth="132.0" text="Commision report" />
+            <Label layoutX="31.0" layoutY="329.0" text="Customer report" />
+            <Label layoutX="365.0" layoutY="329.0" text="Monthly commision" />
+            <DatePicker fx:id="pick_start" layoutX="92.0" layoutY="120.0" />
+            <DatePicker fx:id="pick_end" layoutX="92.0" layoutY="179.0" />
+            <Label layoutX="92.0" layoutY="158.0" text="End date" />
+            <Label layoutX="92.0" layoutY="93.0" text="Start date" />
+            <TableView fx:id="commision_tw" layoutX="332.0" layoutY="120.0" prefHeight="200.0" prefWidth="521.0">
+              <columns>
+                <TableColumn fx:id="auction_id" prefWidth="94.0" text="Auction_id" />
+                <TableColumn fx:id="product" prefWidth="113.0" text="Product" />
+                  <TableColumn fx:id="Start_date" prefWidth="100.0" text="Start_date" />
+                  <TableColumn fx:id="End_Date" prefWidth="114.0" text="End_date" />
+                  <TableColumn fx:id="commision_1" prefWidth="99.0" text="Commision" />
+              </columns>
+            </TableView>
+            <TableView fx:id="cusomer_tw" layoutX="30.0" layoutY="350.0" prefHeight="200.0" prefWidth="321.0">
+              <columns>
+                <TableColumn fx:id="cust_col" prefWidth="153.0" text="Customer" />
+                <TableColumn fx:id="value_col" prefWidth="167.0" text="total order value" />
+              </columns>
+            </TableView>
+            <TableView fx:id="monthly_tw" layoutX="364.0" layoutY="350.0" prefHeight="200.0" prefWidth="321.0">
+              <columns>
+                <TableColumn fx:id="Month_com" prefWidth="179.0" text="Month" />
+                <TableColumn fx:id="total_com" prefWidth="129.0" text="total commision" />
+              </columns>
+            </TableView>
+            <Button fx:id="ok" layoutX="96.0" layoutY="244.0" mnemonicParsing="false" onAction="#getMonthlyCommision" text="OK" />
+            <TableView fx:id="nobid_tw" layoutX="699.0" layoutY="350.0" prefHeight="200.0" prefWidth="321.0">
+              <columns>
+                <TableColumn fx:id="auction_id_nobid" prefWidth="154.0" text="Auction_Id" />
+                <TableColumn fx:id="product_nobid" prefWidth="166.0" text="Product" />
+              </columns>
+            </TableView>
+            <Label layoutX="700.0" layoutY="329.0" text="Ended auctions with no bids" />
+            <Label fx:id="startDateLabel" layoutX="14.0" layoutY="125.0" text="Pick Date" textFill="#e40a0a" visible="false" />
+            <Label fx:id="endDateLabel" layoutX="14.0" layoutY="184.0" text="Pick Date" textFill="#e40a0a" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

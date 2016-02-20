@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddSupplierCtrl">
+   <children>
+      <Label text="Company info" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Company name" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="55.0" />
+      <Label text="Organisations nr" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="85.0" />
+      <Label text="Commission rate" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="115.0" />
+      <Label text="Customer contact" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="145.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label text="First name" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="170.0" />
+      <Label text="Lastname" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="200.0" />
+      <Label text="Email" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="230.0" />
+      <Label text="Phone number" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="260.0" />
+      <TextField fx:id="compNameTF" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="orgnr" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="80.0" />
+      <TextField fx:id="rateTF" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="110.0" />
+      <TextField fx:id="firstnameTF" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="165.0" />
+      <TextField fx:id="lastnameTF" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="195.0" />
+      <TextField fx:id="emailTF" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="225.0" />
+      <TextField fx:id="phoneTF" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="255.0" />
+      <Button mnemonicParsing="false" onAction="#addSupplier" text="Add supplier" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="320.0" />
+      <Label fx:id="emptyFormLabel" layoutX="98.0" layoutY="305.0" text="Complete the form" textFill="#da0d0d" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="rateNFELabel" layoutX="176.0" layoutY="147.0" text="Rate must be numeric" textFill="#e10909" visible="false" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

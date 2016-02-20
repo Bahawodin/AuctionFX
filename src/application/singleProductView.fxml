@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="447.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProductViewCtrl">
+
+   <children>
+
+      <VBox layoutX="27.0" layoutY="233.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+
+         <children>
+            <Label text="AuctionID" />
+            <Label text="Supplier" />
+            <Label text="Product" />
+            <Label text="Start Price" />
+            <Label text="Accept Price" />
+            <Label text="End Date" />
+            <Label text="Bider" />
+         </children>
+      </VBox>
+
+      <VBox layoutX="127.0" layoutY="233.0" prefHeight="200.0" prefWidth="143.0" spacing="5.0">
+
+         <children>
+            <Label fx:id="auctionID" prefWidth="140.0" text="auctionID" />
+            <Label fx:id="supplier" prefWidth="140.0" text="supplier" />
+            <Label fx:id="product" prefWidth="140.0" text="product" />
+            <Label fx:id="startPrice" prefWidth="140.0" text="startPrice" />
+            <Label fx:id="acceptPrice" prefWidth="140.0" text="acceptPrice" />
+            <Label fx:id="endDate" prefWidth="140.0" text="endDate" />
+            <Label fx:id="bider" prefWidth="140.0" text="bider" />
+         </children>
+      </VBox>
+      <ImageView fx:id="picView" fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="50.0" layoutY="48.0" text="Bild" />
+      <VBox layoutX="339.0" layoutY="57.0" spacing="10.0">
+         <children>
+            <Label text="Highest Bid">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="highestBid" text="highestBid" textFill="#e48b0e">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="339.0" layoutY="233.0" spacing="5.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="131.0" text="Description" />
+      
+            <TextArea fx:id="descriptionArea" prefHeight="137.0" prefWidth="423.0" />
+         </children>
+      </VBox>
+
+   </children>
+</AnchorPane>

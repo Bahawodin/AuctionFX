@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="root" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootCtrl">
+   <top>
+      <Label text="Nackademiska Auktionsfrämjandet" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </Label>
+   </top>
+   <left>
+      <VBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#setToOngoingAuctions" prefWidth="133.0" text="Ongoing Auctions" />
+            <Button mnemonicParsing="false" onAction="#addSupplier" prefWidth="133.0" text="Add new supplier" />
+            <Button mnemonicParsing="false" onAction="#addCustomer" prefWidth="133.0" text="Add new customer" />
+            <Button mnemonicParsing="false" onAction="#addAuction" prefWidth="133.0" text="Add new auction or product" wrapText="true" />
+            <Button layoutX="10.0" layoutY="121.0" mnemonicParsing="false" onAction="#showReports" prefWidth="133.0" text="Reports" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+</BorderPane>

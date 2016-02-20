@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="609.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddauctionAndProductCtrl">
+   <children>
+      <Button layoutX="536.0" layoutY="489.0" mnemonicParsing="false" onAction="#addProduct" text="Add Product" />
+      <VBox layoutX="500.0" layoutY="58.0" spacing="10.0">
+         <children>
+            <Label text="Supplier Org. number" />
+            <TextField fx:id="supplierOrgNr" />
+            <Label text="Category" />
+            <ComboBox fx:id="category" prefWidth="150.0" />
+            <Label text="Product Name" />
+            <TextField fx:id="productName" />
+            <Label text="Description" />
+            <TextArea fx:id="productDescription" prefHeight="47.0" prefWidth="100.0" />
+            <Label text="Start price" />
+            <TextField fx:id="reg_start_price" />
+            <Label text="Acceptance price" />
+            <TextField fx:id="reg_accept_price" />
+         </children>
+      </VBox>
+      <VBox layoutX="104.0" layoutY="58.0" spacing="10.0">
+         <children>
+            <Label text="Pick supplier" />
+            <ComboBox fx:id="pick_supplier" prefWidth="150.0" />
+            <Label text="Pick a product" />
+            <ComboBox fx:id="pick_product" prefWidth="150.0" />
+            <Label text="Start date" />
+            <DatePicker fx:id="start_date" prefHeight="31.0" prefWidth="211.0" promptText="Start date" />
+            <Label text="End date" />
+            <DatePicker fx:id="end_date" prefHeight="31.0" prefWidth="211.0" promptText="End date" />
+            <Label text="Start price" />
+            <TextField fx:id="start_price" prefHeight="31.0" prefWidth="197.0" promptText="Start price" />
+            <Label prefHeight="21.0" prefWidth="135.0" text="Acceptance price" />
+            <TextField fx:id="accept_price" prefHeight="31.0" prefWidth="197.0" promptText="Acceptance price" />
+         </children>
+      </VBox>
+      <Button id="add_auction" layoutX="149.0" layoutY="487.0" mnemonicParsing="false" onAction="#addToAuctions" prefHeight="31.0" prefWidth="121.0" text="Add Auction" />
+      <Label layoutX="104.0" layoutY="14.0" text="Add new auction" textFill="#2c1ad0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="14.0" text="Add new product" textFill="#2c1ad0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="notRegistered" layoutX="703.0" layoutY="89.0" text="Customer is not registered" textFill="#e81010" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="auctionLabel" layoutX="148.0" layoutY="550.0" text="Complete the form" textFill="#dd0a0a" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="productLabel" layoutX="522.0" layoutY="550.0" text="Complete the form" textFill="#dd0a0a" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="startLabel1" layoutX="334.0" layoutY="356.0" text="Must be numeric" textFill="#e10b0b" visible="false" />
+      <Label fx:id="acceptLabel1" layoutX="334.0" layoutY="426.0" text="Must be numeric" textFill="#e10b0b" visible="false" />
+      <Label fx:id="startLabel2" layoutX="689.0" layoutY="365.0" text="Must be numeric" textFill="#e10b0b" visible="false" />
+      <Label fx:id="acceptLabel2" layoutX="689.0" layoutY="426.0" text="Must be numeric" textFill="#e10b0b" visible="false" />
+   </children>
+</AnchorPane>
